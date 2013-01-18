@@ -40,7 +40,9 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'vim-scripts/The-NERD-tree.git'
 Bundle 'vim-scripts/pep8.git'
-
+Bundle 'vim-scripts/ColorSchemePicker.git'
+Bundle 'vim-scripts/awk.vim.git'
+Bundle 'vim-scripts/Colour-Sampler-Pack.git'
 " vim-scripts repos
 "Bundle 'L9'
 
@@ -87,3 +89,4 @@ map <c-h> <c-w>h
 set backspace=2
 
 set whichwrap+=<,>,h,l
+
