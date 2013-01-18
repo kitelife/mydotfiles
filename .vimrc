@@ -43,8 +43,9 @@ Bundle 'vim-scripts/pep8.git'
 Bundle 'vim-scripts/ColorSchemePicker.git'
 Bundle 'vim-scripts/awk.vim.git'
 Bundle 'vim-scripts/Colour-Sampler-Pack.git'
+Bundle 'plasticboy/vim-markdown.git'
 " vim-scripts repos
-"Bundle 'L9'
+Bundle 'go.vim'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
