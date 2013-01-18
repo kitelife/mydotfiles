@@ -1,0 +1,7 @@
+[user]
+	name = youngsterxyf
+	email = sas.198708@gmail.com
+[color]
+	ui = auto
+[merge]
+	tool = vimdiff
