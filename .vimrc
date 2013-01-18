@@ -64,7 +64,7 @@ set showmatch
 set matchtime=5
 set smartindent
 
-colorscheme default
+colorscheme desert
 
 """""""""""""""""""""""""""""""
 " 代码折叠 "
