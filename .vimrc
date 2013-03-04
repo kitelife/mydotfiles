@@ -5,7 +5,6 @@ syntax on
 
 set autoindent
 set cindent
-set textwidth=79
 set tabstop=4
 set expandtab
 set softtabstop=4
@@ -39,11 +38,11 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'vim-scripts/The-NERD-tree.git'
-Bundle 'vim-scripts/pep8.git'
-Bundle 'vim-scripts/ColorSchemePicker.git'
 Bundle 'vim-scripts/awk.vim.git'
-Bundle 'vim-scripts/Colour-Sampler-Pack.git'
 Bundle 'plasticboy/vim-markdown.git'
+Bundle "pangloss/vim-javascript"
+Bundle "vim-scripts/pep8.git"
+Bundle "davidhalter/jedi-vim.git"
 " vim-scripts repos
 Bundle 'go.vim'
 
@@ -67,7 +66,7 @@ set showmatch
 set matchtime=5
 set smartindent
 
-colorscheme desert
+colorscheme default
 
 """""""""""""""""""""""""""""""
 " 代码折叠 "
