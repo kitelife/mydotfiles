@@ -43,9 +43,9 @@ Bundle 'plasticboy/vim-markdown.git'
 Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
 Bundle "davidhalter/jedi-vim.git"
+Bundle "airblade/vim-gitgutter.git"
 " vim-scripts repos
 Bundle 'go.vim'
-
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
