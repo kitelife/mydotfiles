@@ -22,6 +22,7 @@ set incsearch
 set encoding=utf-8
 set fileencodings=utf-8,gbk,gb2312
 
+
 "检测文件类型
 filetype off
 
@@ -44,6 +45,10 @@ Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
 Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
+Bundle "walm/jshint.vim.git"
+Bundle "Lokaltog/vim-powerline.git"
+Bundle "tomasr/molokai.git"
+Bundle 'Yggdroot/indentLine'
 " vim-scripts repos
 Bundle 'go.vim'
 " non github repos
@@ -90,3 +95,8 @@ set backspace=2
 
 set whichwrap+=<,>,h,l
 
+let g:Powerline_symbols = 'fancy'
+
+"缩进线
+let g:indentLine_color_gui = "grey40"
+let g:indentLine_char = "┆"
