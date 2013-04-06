@@ -107,6 +107,6 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 "golang
 filetype off
 filetype plugin indent off
-set rtp+=$GOROOT/misc/vim
+set rtp+=~/Softwares/go/misc/vim
 filetype plugin indent on
 syntax on
