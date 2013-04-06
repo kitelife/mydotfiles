@@ -32,6 +32,7 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+export TERM="xterm-256color"
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -107,7 +108,12 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 function _update_ps1() {
-   export PS1="$(~/Softwares/powerline-bash/powerline-bash.py $?)"
+   export PS1="$(~/Softwares/powerline-shell/powerline-shell.py $?)"
 }
 
 export PROMPT_COMMAND="_update_ps1"
+
+export GOROOT="$HOME/Softwares/go"
+export GOARCH=386
+export GOOS=linux 
+export PATH="$PATH:$GOROOT/bin"

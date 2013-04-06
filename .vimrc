@@ -49,8 +49,8 @@ Bundle "walm/jshint.vim.git"
 Bundle "Lokaltog/vim-powerline.git"
 Bundle "tomasr/molokai.git"
 Bundle 'Yggdroot/indentLine'
+Bundle 'skammer/vim-css-color'
 " vim-scripts repos
-Bundle 'go.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
@@ -100,3 +100,13 @@ let g:Powerline_symbols = 'fancy'
 "缩进线
 let g:indentLine_color_gui = "grey40"
 let g:indentLine_char = "┆"
+
+"vim-css-color配置
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+"golang
+filetype off
+filetype plugin indent off
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
