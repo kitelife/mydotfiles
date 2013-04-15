@@ -43,8 +43,11 @@ Bundle 'vim-scripts/awk.vim.git'
 Bundle 'plasticboy/vim-markdown.git'
 Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
+Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
 Bundle "walm/jshint.vim.git"
+
+"在添加powline字体后，应先在vim中执行:PowerlineClearCache，然后重启vim
 Bundle "Lokaltog/vim-powerline.git"
 Bundle "tomasr/molokai.git"
 Bundle 'Yggdroot/indentLine'

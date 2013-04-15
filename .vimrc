@@ -43,6 +43,7 @@ Bundle 'vim-scripts/awk.vim.git'
 Bundle 'plasticboy/vim-markdown.git'
 Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
+"先easy_install jedi
 Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
 Bundle "walm/jshint.vim.git"
