@@ -20,7 +20,9 @@ set hlsearch
 set incsearch
 
 set encoding=utf-8
-set fileencodings=gbk,gb2312,utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,gbk,gb2312
 
 
 "检测文件类型
@@ -46,8 +48,6 @@ Bundle "vim-scripts/pep8.git"
 Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
 Bundle "walm/jshint.vim.git"
-
-"在添加powline字体后，应先在vim中执行:PowerlineClearCache，然后重启vim
 Bundle "Lokaltog/vim-powerline.git"
 Bundle "tomasr/molokai.git"
 Bundle 'Yggdroot/indentLine'
@@ -118,3 +118,11 @@ set columns=9999
 
 "默认目录
 lcd f:/
+
+" 解决菜单乱码
+set langmenu=zh_CN.utf-8
+source $VIMRUNTIME/delmenu.vim
+
+"解决提示信息乱码
+language messages zh_CN.utf-8
+source $VIMRUNTIME/menu.vim
