@@ -20,11 +20,9 @@ set hlsearch
 set incsearch
 
 set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
 set fileencodings=utf-8,gbk,gb2312
-
-"设置行宽
-set textwidth=80
-set colorcolumn=+1
 
 
 "检测文件类型
@@ -47,14 +45,17 @@ Bundle 'vim-scripts/awk.vim.git'
 Bundle 'plasticboy/vim-markdown.git'
 Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
-Bundle "vim-scripts/jQuery"
 "先easy_install jedi
 Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
 Bundle "walm/jshint.vim.git"
+
+"I can't see the fancy symbols, what's wrong?
+"   Make sure that you have let g:Powerline_symbols = 'fancy' in your vimrc file.
+"   The settings may be loaded too late if you have this in gvimrc, so always put this in your vimrc.
+"   Clear the cache using :PowerlineClearCache and restart vim.
 Bundle "Lokaltog/vim-powerline.git"
 Bundle "tomasr/molokai.git"
-Bundle "jaromero/vim-monokai-refined.git"
 Bundle 'Yggdroot/indentLine'
 Bundle 'skammer/vim-css-color'
 " vim-scripts repos
@@ -77,8 +78,6 @@ filetype plugin indent on     " required!
 set showmatch
 set matchtime=5
 set smartindent
-
-colorscheme default
 
 """""""""""""""""""""""""""""""
 " 代码折叠 "
@@ -106,14 +105,31 @@ let g:Powerline_symbols = 'fancy'
 
 "缩进线
 let g:indentLine_color_gui = "grey40"
-let g:indentLine_char = "┆"
+let g:indentLine_char = "|"
 
 "vim-css-color配置
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
-"golang
-filetype off
-filetype plugin indent off
-set rtp+=~/Softwares/go/misc/vim
-filetype plugin indent on
-syntax on
+"gvim
+"""""""""""""""""""""""""""""""
+colorscheme molokai
+"""""""""""""""""""""""""""""""
+"设置窗口显示，字体等
+set guioptions-=T
+set guioptions-=m
+"从https://github.com/eugeneching/consolas-powerline-vim下载字体
+set guifont=Consolas\ for\ Powerline\ FixedD:h12
+
+set lines=9999
+set columns=9999
+
+"默认目录
+lcd f:/
+
+" 解决菜单乱码
+set langmenu=zh_CN.utf-8
+source $VIMRUNTIME/delmenu.vim
+
+"解决提示信息乱码
+language messages zh_CN.utf-8
+source $VIMRUNTIME/menu.vim
