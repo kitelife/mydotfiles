@@ -22,6 +22,10 @@ set incsearch
 set encoding=utf-8
 set fileencodings=utf-8,gbk,gb2312
 
+"设置行宽
+set textwidth=80
+set colorcolumn=+1
+
 
 "检测文件类型
 filetype off
@@ -43,11 +47,13 @@ Bundle 'vim-scripts/awk.vim.git'
 Bundle 'plasticboy/vim-markdown.git'
 Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
+Bundle "vim-scripts/jQuery"
 Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
 Bundle "walm/jshint.vim.git"
 Bundle "Lokaltog/vim-powerline.git"
 Bundle "tomasr/molokai.git"
+Bundle "jaromero/vim-monokai-refined.git"
 Bundle 'Yggdroot/indentLine'
 Bundle 'skammer/vim-css-color'
 " vim-scripts repos

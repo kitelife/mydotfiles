@@ -117,3 +117,6 @@ export GOROOT="$HOME/Softwares/go"
 export GOARCH=386
 export GOOS=linux 
 export PATH="$PATH:$GOROOT/bin"
+
+# nodejs
+export PATH="$PATH:/home/xiayf/Templates/node/bin"
