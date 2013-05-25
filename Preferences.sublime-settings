@@ -23,9 +23,14 @@
 	"font-face": "Ubuntu Mono",
 	"font_options":
 	[
-		"subpixel_antialias"
+		"subpixel_antialias",
+		"no_bold"
 	],
-	"font_size": 11,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"caret_style": "solid",
+	"wide_caret": true,
+	"font_size": 12,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
