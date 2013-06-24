@@ -45,5 +45,9 @@
 	"tab_size": 4,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+    "wide_caret": true,
+    "rulers": [120],
+    "wrap_width": 120,
+    "word_wrap": false
 }
