@@ -7,5 +7,5 @@ set guioptions-=T
 set guioptions-=m
 set guifont=Monaco\ for\ Powerline\ 10
 
-set lines=9999
-set columns=9999
+"set lines=9999
+"set columns=9999

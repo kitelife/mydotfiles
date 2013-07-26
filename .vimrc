@@ -57,6 +57,9 @@ Bundle "tomasr/molokai.git"
 Bundle "jaromero/vim-monokai-refined.git"
 Bundle 'Yggdroot/indentLine'
 Bundle 'skammer/vim-css-color'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/seoul256.vim'
 " vim-scripts repos
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
