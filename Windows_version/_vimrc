@@ -58,6 +58,7 @@ Bundle "Lokaltog/vim-powerline.git"
 Bundle "tomasr/molokai.git"
 Bundle 'Yggdroot/indentLine'
 Bundle 'skammer/vim-css-color'
+Bundle 'jnwhiteh/vim-golang'
 " vim-scripts repos
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
