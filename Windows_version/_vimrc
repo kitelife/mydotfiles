@@ -29,8 +29,9 @@ set fileencodings=utf-8,gbk,gb2312
 filetype off
 
 """"""""""""""""""""""""""""""
+" Windows下vundle的安装过程见：https://github.com/gmarik/vundle/wiki/Vundle-for-Windows
 " 使用vundle管理插件
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/vimfiles/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
