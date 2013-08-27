@@ -1,0 +1,65 @@
+{
+	"auto_indent": true,
+	"caret_style": "solid",
+	"default_encoding": "UTF-8",
+	"draw_indent_guides": true,
+	"draw_white_space": "all",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".idea"
+	],
+	"font-face": "Consolas",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"no_bold"
+	],
+	"font_size": 12,
+	"gutter": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Theme - Centurion",
+		"Tomorrow Color Schemes",
+		"PythonTidy",
+		"PhpTidy",
+		"Vintage",
+		"Markdown Preview",
+		"SmartMarkdown",
+		"Pretty JSON",
+		"Theme - Soda",
+		"SublimeREPL",
+		"ZenGarden"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"line_numbers": true,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"rulers":
+	[
+		120
+	],
+	"tab_size": 4,
+	"theme": "Centurion.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true,
+	"word_wrap": false,
+	"wrap_width": 120
+}
