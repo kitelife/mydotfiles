@@ -60,6 +60,8 @@ Bundle "tomasr/molokai.git"
 Bundle 'Yggdroot/indentLine'
 Bundle 'skammer/vim-css-color'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'tpope/vim-fugitive'
+Bundle 'spf13/PIV'
 " vim-scripts repos
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -126,7 +128,7 @@ set lines=9999
 set columns=9999
 
 "默认目录
-lcd f:/
+"lcd f:/
 
 " 解决菜单乱码
 set langmenu=zh_CN.utf-8
