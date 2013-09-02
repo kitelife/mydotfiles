@@ -19,6 +19,8 @@ set ignorecase
 set hlsearch
 set incsearch
 
+set nowrap
+
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
@@ -31,7 +33,7 @@ filetype off
 """"""""""""""""""""""""""""""
 " Windows下vundle的安装过程见：https://github.com/gmarik/vundle/wiki/Vundle-for-Windows
 " 使用vundle管理插件
-set rtp+=~/vimfiles/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -47,7 +49,7 @@ Bundle 'plasticboy/vim-markdown.git'
 Bundle "pangloss/vim-javascript"
 Bundle "vim-scripts/pep8.git"
 "先easy_install jedi
-Bundle "davidhalter/jedi-vim.git"
+"Bundle "davidhalter/jedi-vim.git"
 Bundle "airblade/vim-gitgutter.git"
 Bundle "walm/jshint.vim.git"
 
@@ -62,6 +64,10 @@ Bundle 'skammer/vim-css-color'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'tpope/vim-fugitive'
 Bundle 'spf13/PIV'
+Bundle 'godlygeek/tabular'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'mileszs/ack.vim'
+Bundle 'Shougo/neocomplcache.vim'
 " vim-scripts repos
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -114,18 +120,30 @@ let g:indentLine_char = "|"
 "vim-css-color配置
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
+"启用neocomplcache.vim提供的自动提示
+let g:acp_enableAtStartup = 0
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
+
 "gvim
 """""""""""""""""""""""""""""""
-colorscheme molokai
+"colorscheme molokai
+set background=dark
+colorscheme solarized
 """""""""""""""""""""""""""""""
 "设置窗口显示，字体等
-set guioptions-=T
-set guioptions-=m
+if has('gui_running')
+    au GUIEnter * simalt ~x "gvim最大化，windows上有效
+    set guioptions-=m       " 隐藏菜单栏
+    set guioptions-=T        " 隐藏工具栏
+    set guioptions-=L       " 隐藏左侧滚动条
+    set guioptions-=r       " 隐藏右侧滚动条
+    set guioptions-=b       " 隐藏底部滚动条
+    "set showtabline=0       " 隐藏Tab栏
+endif
 "从https://github.com/eugeneching/consolas-powerline-vim下载字体
-set guifont=Consolas\ for\ Powerline\ FixedD:h12
-
-set lines=9999
-set columns=9999
+set guifont=Consolas\ for\ Powerline\ FixedD:h11
 
 "默认目录
 "lcd f:/
