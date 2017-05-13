@@ -53,6 +53,9 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'fatih/vim-go'
 Bundle 'majutsushi/tagbar'
 Bundle 'toyamarinyon/vim-swift'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 if has('gui_running')
     Bundle 'Shougo/neocomplete.vim'
@@ -77,7 +80,8 @@ set matchtime=5
 set smartindent
 
 colorscheme molokai
-set guifont=Monaco:h13
+"set guifont=Monaco:h12
+set guifont=Code\ New\ Roman:h12
 """""""""""""""""""""""""""""""
 " 代码折叠 "
 set foldmethod=indent
@@ -90,10 +94,17 @@ let g:indentLine_char = "┆"
 ""vim-css-color配置
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
+set laststatus=2 " Always display the statusline in all windows
+"set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
 let g:tagbar_ctags_bin = "/Users/xiayf/Softwares/bin/ctags"
+let $GOPATH = '/Users/xiayf/GO:/Users/xiayf/Work/code/GO'
+let $GOROOT = '/usr/local/Cellar/go/1.7.1/libexec'
 
 if has('gui_running')
     let g:neocomplete#enable_at_startup = 1
+    set linespace=2
 endif
 
 nmap <F8> :TagbarToggle<CR>
